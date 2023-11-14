@@ -3,7 +3,7 @@
 
 int main(){
 	int a,b,c;
-	int max,min;
+	int max,min,sum,average;
 	do{
 		printf("nhap so nguyen thu 1: ");
 		scanf("%d",&a);
@@ -21,10 +21,12 @@ int main(){
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
-				printf("Tong 3 so nguyen la: %d\n",a+b+c);
+				sum = a+b+c;
+				printf("Tong 3 so nguyen la: %d\n",sum);
 				break;
 			case 2:
-				printf("Trung binh cong cua 3 so nguyen la: %d\n",(a+b+c)/3);
+				average = (a+b+c)/3;
+				printf("Trung binh cong cua 3 so nguyen la: %d\n",average);
 				break;
 			case 3:
 				max = a;
